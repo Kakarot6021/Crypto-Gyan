@@ -6,7 +6,7 @@ import { Row, Col } from 'antd';
 import { useGetExchangesQuery } from '../services/cryptoApi';
 import Loader from './Loader';
 
-// const { Text } = Typography;
+// const { Text } = Typography; coding
 // const { Panel } = Collapse;
 
 const Exchanges = () => {

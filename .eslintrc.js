@@ -4,23 +4,24 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'plugin:react/recommended',
     'airbnb',
+    'plugin:react/recommended',
+    'react-app',
+    'react-app/jest',
   ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: 'module',
+    requireConfigFile: false, // For @babel/eslint-parser
   },
-  parser: 'babel-eslint',
   plugins: [
     'react',
+    'jsx-a11y',
+    'import',
   ],
   rules: {
     indent: 'off',
